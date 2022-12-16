@@ -1,0 +1,15 @@
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\obj\Debug\net6.0\ToDoListWithUsers.csproj.AssemblyReference.cache
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\obj\Debug\net6.0\ToDoListWithUsers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\obj\Debug\net6.0\ToDoListWithUsers.AssemblyInfoInputs.cache
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\obj\Debug\net6.0\ToDoListWithUsers.AssemblyInfo.cs
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\obj\Debug\net6.0\ToDoListWithUsers.csproj.CoreCompileInputs.cache
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\bin\Debug\net6.0\ToDoListWithUsers.exe
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\bin\Debug\net6.0\ToDoListWithUsers.deps.json
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\bin\Debug\net6.0\ToDoListWithUsers.runtimeconfig.json
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\bin\Debug\net6.0\ToDoListWithUsers.dll
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\bin\Debug\net6.0\ToDoListWithUsers.pdb
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\obj\Debug\net6.0\ToDoListWithUsers.dll
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\obj\Debug\net6.0\refint\ToDoListWithUsers.dll
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\obj\Debug\net6.0\ToDoListWithUsers.pdb
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\obj\Debug\net6.0\ToDoListWithUsers.genruntimeconfig.cache
+C:\Users\willi\source\repos\ToDoListWithUsers\ToDoListWithUsers\obj\Debug\net6.0\ref\ToDoListWithUsers.dll

@@ -1,0 +1,79 @@
+[
+  {
+    "Username": "S",
+    "Password": "S",
+    "FirstName": "System",
+    "LastName": "Manager",
+    "Email": "admin@mail.com",
+    "Age": 9000,
+    "Gender": "Robot",
+    "Adress": "113.56.121.167",
+    "Permission": "System"
+  },
+  {
+    "Username": "asdasd",
+    "Password": "8bq0Tc4#7c",
+    "FirstName": "asd",
+    "LastName": "asd",
+    "Email": "aa@aa",
+    "Age": 2,
+    "Gender": "fsa",
+    "Adress": "dsa",
+    "Permission": "Moderator"
+  },
+  {
+    "Username": "hahahaha",
+    "Password": "HAHAHAHAHAha1!",
+    "FirstName": "asd",
+    "LastName": "asd",
+    "Email": "asd@asd",
+    "Age": 12,
+    "Gender": "asd",
+    "Adress": "asd",
+    "Permission": "User"
+  },
+  {
+    "Username": "asdasd12",
+    "Password": "asdasdasdASD!1",
+    "FirstName": "asd",
+    "LastName": "asd",
+    "Email": "asd@asd",
+    "Age": 12,
+    "Gender": "asd",
+    "Adress": "asd",
+    "Permission": "User"
+  },
+  {
+    "Username": "asddsaasd",
+    "Password": "?vXpTx8D9L",
+    "FirstName": "asd",
+    "LastName": "asd",
+    "Email": "asd@asd",
+    "Age": 12,
+    "Gender": "asd",
+    "Adress": "asd",
+    "Permission": "User"
+  },
+  {
+    "Username": "asdasdasd",
+    "Password": "o%9LSC0VBW",
+    "FirstName": "asd",
+    "LastName": "asd",
+    "Email": "asd@sd",
+    "Age": 12,
+    "Gender": "asd",
+    "Adress": "asd",
+    "Permission": "Admin"
+  },
+  {
+    "Username": "sdsadasd",
+    "Password": "asdasdasdASD!1",
+    "FirstName": "sad",
+    "LastName": "1",
+    "Email": "1@1",
+    "Age": 2,
+    "Gender": "2",
+    "Adress": "2",
+    "Permission": "Admin"
+  }
+]
