@@ -13,6 +13,8 @@ namespace ToDoListWithUsers
         [RegularExpression("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[^\\da-zA-Z])(.{10,})$", ErrorMessage = "Password must be atleast 10 characters, one uppercase, one lowercase, one number, and one special")]
         public string Password { get; set; }
 
+        public byte[] PasswordSalt { get; set; }
+
         [Required(ErrorMessage = "First name is required")]
         public string FirstName { get; set; }
 

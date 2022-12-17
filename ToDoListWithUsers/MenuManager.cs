@@ -98,6 +98,7 @@ namespace ToDoListWithUsers
 
             Console.WriteLine("[T] To view your To Do List");
             Console.WriteLine();
+
             if (permission == "Admin" || permission == "System")
             {
                 Console.WriteLine("[C] To create another user");
@@ -286,7 +287,7 @@ namespace ToDoListWithUsers
             switch (Console.ReadKey().Key)
             {
                 case ConsoleKey.T:
-                    if (permission != "System" || permission != "Admin")
+                    if (permission != "System" && permission != "Admin")
                     {
                         UserMenu();
                         break;

@@ -11,8 +11,4 @@
     <Folder Include="Database\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="GoogleAuthenticator" Version="3.0.0" />
-  </ItemGroup>
-
 </Project>

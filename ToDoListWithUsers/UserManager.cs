@@ -1,4 +1,7 @@
 ﻿
+using System.Dynamic;
+using System.Reflection;
+using System.Security;
 using System.Text.Json;
 
 namespace ToDoListWithUsers
@@ -22,9 +25,31 @@ namespace ToDoListWithUsers
 
             Path = Directory.GetParent(_currentDir).Parent.Parent.FullName + FileName;
 
-            if (!File.Exists(Path) || String.IsNullOrEmpty(File.ReadAllText(Path)) || File.ReadAllText(Path) == "[]")
+            if (!File.Exists(Path) || String.IsNullOrEmpty(File.ReadAllText(Path)) || File.ReadAllText(Path).Trim() == "[]")
             {
-                File.WriteAllText(Path, @"[{""Username"":""S"",""Password"":""S"",""FirstName"":""System"",""LastName"":""Manager"",""Email"":""admin@mail.com"",""Age"":9000,""Gender"":""Robot"",""Adress"":""113.56.121.167"",""Permission"":""System""}]");
+                File.WriteAllText(Path, "[]");
+
+                var createUser = new CreateUser();
+                string password = createUser.HashAndSaltPassword("S", out var salt);
+
+                User newUser = new()
+                {
+                    Username = "S",
+                    Password = password,
+                    PasswordSalt = salt,
+                    FirstName = "System",
+                    LastName = "Manager",
+                    Email = "system@mail.com",
+                    Age = 9000,
+                    Gender = "Robot",
+                    Adress = "113.56.121.167",
+                    Permission = "System"
+                };
+
+                Users = Get();
+
+                Users.Add(newUser);
+                Update();
             }
         }
 

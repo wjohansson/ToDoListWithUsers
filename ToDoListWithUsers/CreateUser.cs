@@ -2,6 +2,8 @@
 using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 using System.Security;
+using System.Security.Cryptography;
+using System.Text;
 using System.Text.RegularExpressions;
 
 namespace ToDoListWithUsers
@@ -21,6 +23,11 @@ namespace ToDoListWithUsers
             {
                 foreach (var property in properties)
                 {
+                    if (property.Name == "PasswordSalt")
+                    {
+                        continue;
+                    }
+
                     var isPermission = false;
                     var isInt = false;
                     var isPassword = false;
@@ -93,7 +100,10 @@ namespace ToDoListWithUsers
             catch (Exception)
             {
                 return false;
-            }
+            }   
+            
+            newUser.Password = HashAndSaltPassword(newUser.Password, out var salt);
+            newUser.PasswordSalt = salt;
 
             users.Add(newUser);
 
@@ -145,7 +155,6 @@ namespace ToDoListWithUsers
             switch (Console.ReadKey().Key)
             {
                 case ConsoleKey.D0:
-
                     throw new Exception();
                 case ConsoleKey.D1:
                     return randomPassword;
@@ -155,6 +164,24 @@ namespace ToDoListWithUsers
                     return "";
 
             }
+        }
+
+        public string HashAndSaltPassword(string password, out byte[] salt)
+        {
+            const int keySize = 64;
+            const int iterations = 350000;
+            HashAlgorithmName hashAlgorithm = HashAlgorithmName.SHA512;
+
+            salt = RandomNumberGenerator.GetBytes(keySize);
+
+            var hash = Rfc2898DeriveBytes.Pbkdf2(
+                Encoding.UTF8.GetBytes(password),
+                salt,
+                iterations,
+                hashAlgorithm,
+                keySize);
+
+            return Convert.ToHexString(hash);
         }
     }
 }
